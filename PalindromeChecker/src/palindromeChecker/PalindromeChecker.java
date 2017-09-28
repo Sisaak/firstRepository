@@ -33,7 +33,7 @@ public class PalindromeChecker
 			}
 			else
 			{
-				//this returns the string without the first and last letters on it
+				//this recursive move calls this method with the same string without the first and last letters on it
 				return checkNext(str.substring(1, str.length() - 1));
 			}
 			
