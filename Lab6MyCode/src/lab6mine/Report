@@ -1,0 +1,20 @@
+The first thing I noticed when the umple files generated was the 
+length of the files. It is much more careful with errors than I am. 
+It also creates new methods to simplify more complex methods.
+My code did not have getters and setters for every variable. All of the umple methods
+interacted with each other to accomplish what my program was supposed to. 
+My code also did not flesh out all of the methods while the umple generation did create 
+and implement the methods to provide the functionality that my code was outlining. 
+The umple code managed to understand was the point of this project was
+just by knowing the classes and instance variables. 
+Possible advantages to using this software are that it is very detailed and exact. Also, 
+it is faster than writing all of this code by hand. The umple code also has many more 
+automatically generated comments that are displayed in a way that is common to programmers.
+Another advantage is that it automatically generates the constructors. 
+Some disadvantages include the fact that the code become potentially more complex than is
+needed. It also could misunderstand some of the code entered. For example, the generated 
+Account class has two lists for the orders, one instance variable that I put in, 
+and one that it generated due to the relationship between the classes. It also did 
+not understand that I wanted an array, so it automatically generated a list. In the end, 
+this is much faster than writing all of this code, and this code is functioning. 
+This generation can act as a good starting point for the creation of a project. 

@@ -1,0 +1,20 @@
+class Customer
+{
+  String name;
+1 -- * Order;
+1 -- * Account;
+}
+
+class Account
+{
+  int accountNumber;
+  Order[] orderList;
+  double totalPrice;
+1 -- * Order;
+}
+
+class Order
+{
+  String item;
+  int quantity;
+}
