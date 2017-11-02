@@ -4,38 +4,28 @@ import java.util.ArrayList;
 
 public class FibonacciSum {
 
-	ArrayList<Integer> fibonacciSequence= new ArrayList<Integer>();
+	ArrayList<Long> fibonacciSequence= new ArrayList<Long>();
 	
 	public static void main(String[] args) 
 	{
 		FibonacciSum fs = new FibonacciSum();
-		fs.getSequence(2000000000);
-		System.out.println(fs.sumOfOdds());
+		System.out.println(fs.getSequence(2000000000));
 	}
 	//this method inserts the fibonacci sequence into an array list with the max number being inserted by the user
-	public void getSequence(int max)
+	public long getSequence(int max)
 	{
-		int lastLast = 0;
-		int last = 1;
-		fibonacciSequence.add(last);
-		while(lastLast + last <= max)
+		long lastLast = 0;
+		long last = 1;
+		long total = 1;
+		while((lastLast + last) < max)
 		{
-			int curr = last + lastLast;
-			fibonacciSequence.add(curr);
+			long curr = last + lastLast;
+			if(curr % 2 == 1)
+			{
+				total = total + curr;
+			}
 			lastLast = last;
 			last = curr;
-		}
-	}
-	//this method add all of the odd numbers in the array list and returns the sum
-	public int sumOfOdds()
-	{
-		int total = 0;
-		for(int i = 0; i < fibonacciSequence.size(); i++)
-		{
-			if(fibonacciSequence.get(i) % 2 == 1)
-			{
-				total = total + fibonacciSequence.get(i);
-			}
 		}
 		return total;
 	}
