@@ -9,7 +9,7 @@ public class FibonacciSum {
 	public static void main(String[] args) 
 	{
 		FibonacciSum fs = new FibonacciSum();
-		fs.getSequence(2000000);
+		fs.getSequence(2000000000);
 		System.out.println(fs.sumOfOdds());
 	}
 	//this method inserts the fibonacci sequence into an array list with the max number being inserted by the user
@@ -37,7 +37,6 @@ public class FibonacciSum {
 				total = total + fibonacciSequence.get(i);
 			}
 		}
-		
 		return total;
 	}
 	
