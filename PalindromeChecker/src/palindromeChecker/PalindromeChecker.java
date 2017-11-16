@@ -36,7 +36,6 @@ public class PalindromeChecker
 				//this recursive move calls this method with the same string without the first and last letters on it
 				return checkNext(str.substring(1, str.length() - 1));
 			}
-			
 		}
 		else
 		{
@@ -44,5 +43,5 @@ public class PalindromeChecker
 		}
 		
 	}
-
+	
 }
